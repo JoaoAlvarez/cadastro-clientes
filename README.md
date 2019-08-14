@@ -5,7 +5,7 @@ Foram usando no projeto: SpringBoot2, Banco H2 para persistencia(com dados para 
 # Utilizando a api
 
 **Cadastrar cidade**
-  -"/cidades" Metodo POST (Cidade deve ser enviada vai RequestBody e são esperado o "nome" e um ObjetoEstado("estado":{"id":x}))
+  -"/cidades" Metodo POST (Cidade deve ser enviada via RequestBody e são esperados o "nome" e um ObjetoEstado("estado":{"id":x}))
   
 **Cadastrar cliente**
   -"/clientes" Metodo POST (Cliente deve ser enviado via RequestBody e são esperados "nomeCompleto","sexo"(sendo interos: 1=HOMEM,2=MULHER,3=OUTRO),"dataNascimento"(dd/MM/yyyy) e ObjetoCidade("cidade:"{"id":x})
@@ -14,7 +14,7 @@ Foram usando no projeto: SpringBoot2, Banco H2 para persistencia(com dados para 
   -"/cidades/{nomeDaCidade}" Metodo GET (Retorna uma lista de Cidades)
   
 **Consultar cidade pelo estado**
-  -"/cidades/estado/{nomeDoEstado}" Metodo GET (Retornar uma lista de Cidades)
+  -"/cidades/estado/{nomeDoEstado}" Metodo GET (Retorna uma lista de Cidades)
   
 **Consultar todos clientes**
   -"/clientes" Metodo GET
@@ -29,4 +29,4 @@ Foram usando no projeto: SpringBoot2, Banco H2 para persistencia(com dados para 
   -"/clientes/{id}" Metodo DELETE
 
 **Alterar o nome do cliente**
-  -"/clientes" Metodo PUT (A alteração é feita via RequestBody, sendo passado como atribulo o ID do clientes e o "nomeCompleto" a ser alterado)
+  -"/clientes" Metodo PUT (A alteração é feita via RequestBody, sendo passado como atribulo o ID do cliente e o "nomeCompleto" a ser alterado)
